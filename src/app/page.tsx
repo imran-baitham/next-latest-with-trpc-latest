@@ -2,7 +2,7 @@ import { CreatePost } from "./_components/create-post";
 import { trpc } from "./_trpc/server";
 
 export default async function Home() {
-  const hello = await trpc.post.hello({ text: "from Zahid" });
+  const hello = await trpc.post.hello({ text: "from Imran Baitham" });
   const latestPost = await trpc.post.getLatest();
 
   return (
